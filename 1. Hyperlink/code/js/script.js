@@ -24,11 +24,12 @@ for (var i = 0; i < pTextArray.length; i++) {
 			var ranInt = Math.round(Math.random()*9) + 1
 			// temp = "<a href=\"" + tag + ".html\"><img src=\"images/" + tag + ranInt + ".jpg\" alt=\"" + tag + "\" style=\"width:" + imgWidth + ";\"></a>";
 			temp = "<img src=\"images/" + tag + ranInt + ".jpg\" alt=\"" + tag + "\" style=\"width:" + imgWidth + ";\">";
-		} else if (pTextArray[i].substring(0, pTextArray[i].length - 1) == keyWords[j]) {
-			var imgWidth = tag.length * 26 + "px"
-			var ranInt = Math.round(Math.random()*9) + 1
-			temp = "<img src=\"images/" + tag + ranInt + ".jpg\" alt=\"" + tag + "\" style=\"width:" + imgWidth + ";\">";
 		}
+		// } else if (pTextArray[i].substring(0, pTextArray[i].length - 1) == keyWords[j]) {
+		// 	var imgWidth = tag.length * 26 + "px"
+		// 	var ranInt = Math.round(Math.random()*9) + 1
+		// 	temp = "<img src=\"images/" + tag + ranInt + ".jpg\" alt=\"" + tag + "\" style=\"width:" + imgWidth + ";\">";
+		// }
 	}
 	pTextEdited += temp + " "; 
 }
