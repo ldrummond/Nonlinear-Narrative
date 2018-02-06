@@ -33,7 +33,7 @@ for (var i = 0; i < pTextArray.length; i++) {
 	pTextEdited += temp + " "; 
 }
 var fileBody = document.body
-fileBody.innerHTML = fileBody.innerHTML + '\n' + "<a href=\"source.html\"><h4 id=\"source\">source</h4></a>"
+fileBody.innerHTML = fileBody.innerHTML + '\n' + "<a href=\"source.html\"><h4 id=\"source\">_____</h4></a>"
 
 document.getElementById("text").innerHTML = pTextEdited;
 document.getElementById("text").style.opacity = "1";
