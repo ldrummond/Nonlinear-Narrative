@@ -57,8 +57,7 @@ img {
 }
 
 img:hover {
-	/*position: relative;*/
-	/*top: -2px;*/
+	border: 0.5 solid grey;
 }
 
 
