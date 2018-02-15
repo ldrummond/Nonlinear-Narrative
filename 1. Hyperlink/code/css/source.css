@@ -56,7 +56,7 @@ img {
     -webkit-transition: opacity top left .25s ease-in-out;
 }
 
-img:hover {
+#text a:hover {
 	box-shadow: 1px solid grey;
 }
 
