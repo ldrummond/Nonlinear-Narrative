@@ -55,8 +55,11 @@ function viewText(){
 	var curImages = document.getElementsByTagName('img');
 	for (var i = 0; i < curImages.length; i++) {
 		curImages[i].style.opacity = "0";
-		curImages[i].style.display = "none";
+		curImages[i].style.pointerEvents = "none";
+		// curImages[i].style.display = "none";
 	}
+	document.getElementById('textDrop1').style.opacity = 0; 
+	document.getElementById('textDrop2').style.opacity = 0;
 }
 
 function viewImage(){
@@ -67,8 +70,9 @@ function viewImage(){
 		curImages[i].style.position = "unset";
 		curImages[i].style.display = "";
 		curImages[i].style.opacity = "1";
+		curImages[i].style.pointerEvents = "all";
 	}
-	docText.style.lineHeight = "";
+	// docText.style.lineHeight = "";
 	document.getElementById('textDrop1').style.opacity = 0; 
 	document.getElementById('textDrop2').style.opacity = 0; 
 }
@@ -96,7 +100,6 @@ function viewStructure(){
 			for (var i = 0; i < curImages.length; i++) {
 				var selectedImage = curImages[i]
 				selectedImage.style.position = "absolute";
-
 			}
 		}
 		document.getElementById('textDrop1').style.opacity = 1; 
