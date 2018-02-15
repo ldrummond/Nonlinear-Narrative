@@ -77,6 +77,7 @@ var first = true;
 
 function viewStructure(){
 		var curImages = document.getElementsByTagName('img');
+		if (first) {
 		for (var i = 0; i < curImages.length; i++) {
 			var selectedImage = curImages[i]
 			selectedImage.style.position = "absolute";
@@ -90,6 +91,9 @@ function viewStructure(){
 					// selectedImage.style.opacity = "0";
 				}
 			}
+		}
+		} else {
+			selectedImage.style.position = "absolute";
 		}
 		document.getElementById('textDrop1').style.opacity = 1; 
 		document.getElementById('textDrop2').style.opacity = 1; 
