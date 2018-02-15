@@ -69,8 +69,15 @@ img {
 }
 
 #header {
+ /*   position: fixed;
+    border: 1px solid black;
+    z-index: 2;
+    background-color: #ffc834;*/
+    /*top: 40px;*/
+    /*right: 0px;*/
+    /*background-color: white;*/
 	width: 80px;
-	height: 150px;
+	height: 530px;
 	margin-right: 40px;
 	margin-top: 24px;
 	color: black;
