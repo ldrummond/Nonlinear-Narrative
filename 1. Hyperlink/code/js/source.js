@@ -69,6 +69,8 @@ function viewImage(){
 		curImages[i].style.opacity = "1";
 	}
 	docText.style.lineHeight = "";
+	document.getElementById('textDrop1').style.opacity = 0; 
+	document.getElementById('textDrop2').style.opacity = 0; 
 }
 
 var first = true; 
