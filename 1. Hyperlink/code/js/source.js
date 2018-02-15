@@ -77,23 +77,27 @@ var first = true;
 
 function viewStructure(){
 		var curImages = document.getElementsByTagName('img');
-		if (first) {
-		for (var i = 0; i < curImages.length; i++) {
-			var selectedImage = curImages[i]
-			selectedImage.style.position = "absolute";
-			for (var j = 0; j < keyWords.length; j++) {
-				if(selectedImage.alt == keyWords[j]) {
-					if (first == true) {
-						keywordMatches[j] ++; 
+		if (first == true) {
+			for (var i = 0; i < curImages.length; i++) {
+				var selectedImage = curImages[i]
+				selectedImage.style.position = "absolute";
+				for (var j = 0; j < keyWords.length; j++) {
+					if(selectedImage.alt == keyWords[j]) {
+						if (first == true) {
+							keywordMatches[j] ++; 
+						}
+						selectedImage.style.top = 200 + j * 50 + "px";
+						selectedImage.style.left = 300+ (keywordMatches[j] * 50) + "px";
+						// selectedImage.style.opacity = "0";
 					}
-					selectedImage.style.top = 200 + j * 50 + "px";
-					selectedImage.style.left = 300+ (keywordMatches[j] * 50) + "px";
-					// selectedImage.style.opacity = "0";
 				}
 			}
-		}
 		} else {
-			selectedImage.style.position = "absolute";
+			for (var i = 0; i < curImages.length; i++) {
+				var selectedImage = curImages[i]
+				selectedImage.style.position = "absolute";
+
+			}
 		}
 		document.getElementById('textDrop1').style.opacity = 1; 
 		document.getElementById('textDrop2').style.opacity = 1; 
