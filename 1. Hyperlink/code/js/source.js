@@ -130,16 +130,16 @@ for (var j = 0; j < textLinks.length; j++) {
 
 window.onload = function(){
 	document.getElementById("text").style.opacity = "1";
-	// $('img').okzoom({
-	//     width: 200,
-	//     height: 150,
-	//     round: false,
-	//     scaleWidth: 300,
-	//     background: "#fff",
-	//     /*backgroundRepeat: "repeat",*/
-	//     shadow: "0 0 0px #000",
-	//     border: "1px solid black"
-	// });
+	$('img').okzoom({
+	    width: 200,
+	    height: 150,
+	    round: false,
+	    scaleWidth: 300,
+	    background: "#fff",
+	    /*backgroundRepeat: "repeat",*/
+	    shadow: "0 0 0px #000",
+	    border: "1px solid black"
+	});
 }
 
 
