@@ -2,37 +2,221 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Lato', sans-serif;
-	font-weight: 600;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 400;
 }
 
 body {
-	/*background-color: lightgrey;*/
+	/*background-color: blue;*/
+	background-color: #BD7CC1;
+}
+
+input:focus {
+	outline: none;
 }
 
 #titleBlock {
-	width: 400px;
-	height: 460px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	width: 500px;
+	height: 550px;
 	margin: auto;
 	background-color: white;
-	border: 4px solid darkgrey;
-	margin-top: 10%;
-	padding: 10px;
+	/*border: 2px solid black;*/
+	padding: 30px;
+	top: 12vh;
+	-webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+    z-index: 10;
 }
 
-#titleBlock input {
-	align-content: right;
-	margin-bottom: 20px;
+#titleBlock #hideTitleButton {
+	display: inline-block;
+    align-content: right;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    font-weight: 400;
+    margin-right: 2px;
+    height: 35px;
+    width: 13px;
+    position: relative;
+    top: -4px;
+    float: right;
+}
+
+#titleBlock #hideTitleButton:hover {
+	/*color: orange;*/
+	border-bottom: 2px solid #BD7CC1;
+}
+
+#titleBlock #hideTitleButton:focus {
+	outline: none;
+	/*color: red;*/
 }
 
 #titleBlock h1 {
+	/*text-transform: uppercase;*/
 	text-align: center; 
-	font-size: 24px;
+	font-size: 21px;
+	float: left;
+	border-bottom: 2px curved #BD7CC1;
+	height: 33px;
+	font-weight: 800;
+	letter-spacing: .3px;
+	word-spacing: 2px;
 }
 
-#lost {
-	width: 25%;
-	position: absolute;
-	top: -48px;
-	left: 0;
+#titleBlock p {
+	/*border-top: 3px solid black;*/
+	display: inline-block;
+	width: 100%;
+	/*height: 200px; */
+	margin-top: 10px;
+	word-spacing: 1px;
+	padding-top: 20px;
+	line-height: 32px;
+	font-size: 20px;
+	letter-spacing: 0.5px;
+	font-weight: 200;
+	margin-bottom: 50px;
 }
+
+
+#chart {
+	width: 100%;
+	height: 100vh;
+	margin: auto;
+	z-index: 0;
+	opacity: 0;
+}
+
+#chart #lost {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    border: 1px solid grey;
+}
+
+#chart #found {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    right: 15%;
+    bottom: 20%;
+    border: 1px solid grey;
+}
+
+#titles {
+	background-color: transparent;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+#titles input, #titles span {
+	color: black;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 400;
+	border: none; 
+	border-radius: none; 
+	width: 49%;
+	text-align: left;
+	font-size: 16px;
+    background-color: transparent;
+}
+
+#titles input:hover {
+	color: blue;
+}
+
+#titles .about {
+	position: absolute;
+	top: 30px;
+	left: 20px;
+}
+
+#titles .run {
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	text-align: right;
+}
+
+#titles .find {
+	position: absolute;
+	bottom: 30px;
+	left: 20px;
+}
+
+#titles .lose {
+	position: absolute;
+	bottom: 30px;
+	right: 20px;
+	text-align: right;
+}
+
+#titles label {
+	display: block;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+#titles .formCheck {
+	display: inline-block;
+	width: 20px;
+    height: 20px;
+    border: 3px solid black;
+    margin-left: 5px;
+    position: relative;
+    top: 4px;
+}
+
+#titles .formCheck:hover  {
+	border-radius: 10px;
+}
+
+#match {
+	width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+}
+
+#map {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 200px;
+	margin:auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

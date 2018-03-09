@@ -2,24 +2,42 @@
 <html>
 <head>
 	<title>Recover Project</title>
-	<script src="https://use.fontawesome.com/e1d3f3e930.js"></script>
+	<meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+	<!-- <script src="https://use.fontawesome.com/e1d3f3e930.js"></script> -->
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Lato:300,400,400i,900,900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
 </head>
 <body>
 	<div id="titleBlock">
-		<input type="button" value="x" />
-		<h1>The Recover Project</h1>
+		<input type="button" id="hideTitleButton" value="x" />
+		<h1>The Recovery Project</h1>
 		<p>
-			
+			Thousands of items are lost and found each day, but very few are ever returned to their place of origin. The Recovery Project uses Twitter and data analysis to solve this problem, matching lost and found items and tracking their progress.
 		</p>
 	</div>
-	<div id="lost">
-		<a class="twitter-timeline" href="https://twitter.com/allthatis_Lost?ref_src=twsrc%5Etfw">Tweets by allthatis_Lost</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<div id="chart">
+		<div id="lost">
+			<h1 id="lostNumber"></h1>
+			<h2 id="lostItem"></h2>
+		</div>
+		<div id = "match"></div>
+		<div id="found">
+			<h1 id="foundNumber"></h1>
+			<h2 id="foundItem"></h2>
+		</div>
+		<div id= "map">
+			
+		</div>
 	</div>
-	<div id="found">
+	<div id="titles">
+		<input class="about" type="button" id="showTitleButton" value="About TRP" />
+		<input class="run" type="button" id="simulate" value="Simulate" />
+		<span class="find">Find an Item? <a href="https://twitter.com/intent/tweet?text=@trp_Found I found" class="formCheck" target = "_blank"></a></span>
+		<span class="lose">Lose an Item? <a href="https://twitter.com/intent/tweet?text=@trp_Lost I lost" class="formCheck" target = "_blank"></a></span>
 	</div>
-
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcg6rFV1rPP3a9J9HoLVar01HMFjrCGNs&libraries=places"></script>
 	<script type="text/javascript" src="scripts.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcg6rFV1rPP3a9J9HoLVar01HMFjrCGNs&callback=initMap" async defer></script>
 </body>
 </html>
