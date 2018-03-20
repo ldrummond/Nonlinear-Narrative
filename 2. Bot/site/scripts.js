@@ -683,7 +683,7 @@ function initMap(matchArray) {
         });
 
         map.controls = [];
-        map.setOptions({styles: silver, disableDefaultUI: true, draggable: false});
+        map.setOptions({styles: silver, disableDefaultUI: true});
 
 }
 
