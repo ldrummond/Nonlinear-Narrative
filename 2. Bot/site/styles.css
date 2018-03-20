@@ -6,10 +6,8 @@
 	font-weight: 400;
 }
 
-body {
-	/*background-color: blue;*/
-	background-color: #BD7CC1;
-}
+html, body {margin: 0; height: 100%; overflow: hidden}
+
 
 input:focus {
 	outline: none;
@@ -19,13 +17,13 @@ input:focus {
 	position: absolute;
 	right: 0;
 	left: 0;
-	width: 500px;
-	height: 550px;
+	width: 400px;
 	margin: auto;
 	background-color: white;
 	/*border: 2px solid black;*/
-	padding: 30px;
-	top: 12vh;
+	padding: 40px;
+	padding-top: 55px;
+	top: 20%;
 	-webkit-transition: opacity .5s;
     -moz-transition: opacity .5s;
     -o-transition: opacity .5s;
@@ -33,25 +31,24 @@ input:focus {
     z-index: 10;
 }
 
+
 #titleBlock #hideTitleButton {
 	display: inline-block;
     align-content: right;
-    margin-bottom: 20px;
-    background-color: transparent;
     border: none;
     font-size: 25px;
-    font-weight: 400;
+    font-family: sans-serif;
+    font-weight: lighter;
     margin-right: 2px;
-    height: 35px;
+    height: 25px;
     width: 13px;
     position: relative;
     top: -4px;
-    float: right;
+    float: left;
 }
 
 #titleBlock #hideTitleButton:hover {
-	/*color: orange;*/
-	border-bottom: 2px solid #BD7CC1;
+	color:  #00aced;
 }
 
 #titleBlock #hideTitleButton:focus {
@@ -64,7 +61,6 @@ input:focus {
 	text-align: center; 
 	font-size: 21px;
 	float: left;
-	border-bottom: 2px curved #BD7CC1;
 	height: 33px;
 	font-weight: 800;
 	letter-spacing: .3px;
@@ -83,7 +79,55 @@ input:focus {
 	font-size: 20px;
 	letter-spacing: 0.5px;
 	font-weight: 200;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+}
+
+#titleBlock p a {
+	text-decoration: none;
+	color: black;
+	font-weight: 300;
+	/*font-style: italic;*/
+	/*border-bottom: 1px solid blue; */
+}
+
+#titleBlock p a:first-of-type {
+	font-weight: 400;
+	color: #00aced;
+}
+
+#titleBlock p a:first-of-type:hover {
+	opacity: 0;
+	color: #00aced;
+}
+
+#titleBlock p a:nth-of-type(2) {
+	font-weight: 400;
+	color: #00aced;
+}
+
+#titleBlock p a:nth-of-type(2):hover {
+	font-style: italic;
+	color: #00aced;
+	/*content: " a";*/
+}
+
+#titleBlock p a:last-of-type {
+	font-weight: 400;
+	color: #00aced;
+	color: white
+}
+
+#titleBlock p a:last-of-type:hover {
+	font-weight: 400;
+	color: black;
+}
+
+#titleBlock p a:last-of-type i {
+	text-decoration: none;
+	/*display: all;*/
+	/*font-style: italic;*/
+	color: #00aced;
+	/*border-bottom: 1px solid blue; */
 }
 
 
@@ -123,93 +167,103 @@ input:focus {
     transition: opacity .5s;
 }
 
-#titles input, #titles span {
-	color: black;
-	font-family: 'Heebo', sans-serif;
-	font-weight: 400;
-	border: none; 
-	border-radius: none; 
-	width: 49%;
-	text-align: left;
-	font-size: 16px;
-    background-color: transparent;
+#titles {
+	width: 100%;
+	height: 58px;
+	padding: 18px;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	margin:auto;
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: justify;
 }
 
-#titles input:hover {
-	color: blue;
+#titles input, #titles a {
+	color: #00aced;
+	background-color: transparent;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 300;
+	border: none; 
+	border-radius: none; 
+	font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+}
+
+#titles input:hover, #titles a:hover {
+	color: black;
+}
+
+#titles a i {
+    margin: 0px 5px;
 }
 
 #titles .about {
-	position: absolute;
-	top: 30px;
-	left: 20px;
-}
-
-#titles .run {
-	position: absolute;
-	top: 30px;
-	right: 20px;
-	text-align: right;
+	padding-right: 25px;
+	/*text-align: right;*/
 }
 
 #titles .find {
-	position: absolute;
-	bottom: 30px;
-	left: 20px;
+	text-align: left;
 }
 
 #titles .lose {
-	position: absolute;
-	bottom: 30px;
-	right: 20px;
 	text-align: right;
 }
 
-#titles label {
-	display: block;
-	text-transform: uppercase;
-	font-size: 16px;
-	font-weight: 500;
-	margin-bottom: 10px;
-	margin-top: 20px;
-}
-
-#titles .formCheck {
-	display: inline-block;
-	width: 20px;
-    height: 20px;
-    border: 3px solid black;
-    margin-left: 5px;
-    position: relative;
-    top: 4px;
-}
-
-#titles .formCheck:hover  {
-	border-radius: 10px;
-}
-
-#match {
-	width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 45%;
-    top: 45%;
-}
-
 #map {
-	width: 400px;
-	height: 400px;
 	position: absolute;
+	top: 0;
 	left: 0;
 	right: 0;
-	top: 200px;
-	margin:auto;
+	height: 105%;
 }
 
+#details {
+	position: absolute;
+	top: 50px;
+	left: 80px;
+	color: black;
+	z-index: 2;
+}
 
+#details h1 {
+	text-transform: uppercase;
+	line-height: 20px;
+	font-size: 15px
+}
 
+#details h2 {
+	font-size: 15px;
+	font-style: italic;
+}
 
+#windowContent {
+	font-size: 12px;
+	font-color: black;
+	font-family: "Heebo", sans-serif;
+}
 
+#windowContent h1 {
+	text-transform: capitalize;
+	font-size: 12px;
+}
+
+#windowContent h2 {
+	font-style: italic;
+	text-transform: capitalize;
+	font-size: 12px;
+}
+
+#windowContent p {
+	/*font-style: italic;*/
+	/*text-transform: capitalize;*/
+	font-size: 12px;
+}
 
 
 

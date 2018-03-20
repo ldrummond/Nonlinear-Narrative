@@ -1,43 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Recover Project</title>
+	<title>Recovery Project</title>
 	<meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
-	<!-- <script src="https://use.fontawesome.com/e1d3f3e930.js"></script> -->
+	<script src="https://use.fontawesome.com/e1d3f3e930.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
 </head>
 <body>
+	<div id="stuff"></div>
 	<div id="titleBlock">
-		<input type="button" id="hideTitleButton" value="x" />
 		<h1>The Recovery Project</h1>
 		<p>
-			Thousands of items are lost and found each day, but very few are ever returned to their place of origin. The Recovery Project uses Twitter and data analysis to solve this problem, matching lost and found items and tracking their progress.
+			Thousands of items are <a href="https://twitter.com/trp_Lost">lost</a> and <a href="https://twitter.com/trp_Found">found</a> each day, but very few are ever returned to their place of origin. The Recovery Project uses <a href="https://twitter.com/"><i class="fa fa-twitter"></i> </a> to analyze the data, helping to recover lost and found items from all over the world.
 		</p>
+		<input type="button" id="hideTitleButton" value="x" />
 	</div>
-	<div id="chart">
-		<div id="lost">
-			<h1 id="lostNumber"></h1>
-			<h2 id="lostItem"></h2>
-		</div>
-		<div id = "match"></div>
-		<div id="found">
-			<h1 id="foundNumber"></h1>
-			<h2 id="foundItem"></h2>
-		</div>
-		<div id= "map">
-			
-		</div>
+	<div id="details" style="opacity: 0">
+		<h1>RECOVERED ITEM</h1>
+		<h2 id="recoveredItem">item</h2>
 	</div>
+	<div id= "map"></div>
 	<div id="titles">
+		<a href="https://twitter.com/intent/tweet?text=@trp_Found I found" class="formCheck find" target = "_blank"><i class="fa fa-twitter"></i> Find an Item?</a>
 		<input class="about" type="button" id="showTitleButton" value="About TRP" />
-		<input class="run" type="button" id="simulate" value="Simulate" />
-		<span class="find">Find an Item? <a href="https://twitter.com/intent/tweet?text=@trp_Found I found" class="formCheck" target = "_blank"></a></span>
-		<span class="lose">Lose an Item? <a href="https://twitter.com/intent/tweet?text=@trp_Lost I lost" class="formCheck" target = "_blank"></a></span>
+		<input class="run" type="button" id="simulate" value="See Another Recovery" />
+		<a href="https://twitter.com/intent/tweet?text=@trp_Lost I lost" class="formCheck lose" target = "_blank">Lose an Item? <i class="fa fa-twitter"></i></a>
 	</div>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcg6rFV1rPP3a9J9HoLVar01HMFjrCGNs&libraries=places"></script>
-	<script type="text/javascript" src="scripts.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcg6rFV1rPP3a9J9HoLVar01HMFjrCGNs&callback=initMap" async defer></script>
+	<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
