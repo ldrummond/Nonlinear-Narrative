@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'PT Serif', serif;
+	background-color: #0e61a2;
+}
+
+#content {
+	position: fixed;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	height: 90vh; 
+	margin: auto;
+	margin-top: 3vh;
+	display: inline-block;
+	/*background-image: url("../background.jpg");*/
+	overflow: hidden;
+}
+
+#videos {
+	box-sizing: border-box;
+	position: absolute;
+	right: 0;
+	top: 5vh;
+	padding: 0px 10vw;
+	height: 77vh;
+	overflow: scroll;
+}
+
+video {
+	/*display: inline-block;*/
+	padding: 10px;
+	margin: 0px;
+	max-width: 100%;
+	/*max-height: 90vh;*/
+}
+
+video:hover {
+	cursor: pointer;
+}
+
+#text {
+	position: relative;
+	left: 10vh;
+	top: 3vh;
+	width: 300px;
+	padding-left: 20px;
+	padding-top: 20px;
+	z-index: 20;
+}
+
+#actions {
+	width: 100%;
+}
+
+#controllers {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+h2 {
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: white;
+	border-bottom: 2px solid white;
+	width: 90%;
+	height: 25px;
+	margin: 3px;
+	margin-bottom: 20px;
+}
+
+button {
+	font-size: 18px;
+	word-spacing: -1px;
+	padding: 0 12px;
+	height: 50px;
+	font-family: serif;
+	border: none;
+	border: 1px solid white;
+	font-style: italic;
+	margin: 3px;
+	background-color: transparent;
+	color: white;
+	font-weight: 100;
+}
+
+button:hover {
+	background-color: white;
+	border-color: white;
+	color: #0e61a2;
+}
+
+button:focus {
+	/*color: blue;*/
+	outline: none;
+}
+
+.viableButton {
+	border-color: grey;
+	color: grey;
+}
+
+.selectedController {
+	background-color: white;
+	/*border-color: white;*/
+	color: #0e61a2;
+}
+
+.selectedAction {
+	background-color: white;
+	/*border-color: white;*/
+	color: #0e61a2;
+}
+
+
+
+
+
+
+
+
+
+
